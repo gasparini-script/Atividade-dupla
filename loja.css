@@ -121,6 +121,16 @@ h1 {
     object-fit: cover;
 }
 
+.card img.chuteira-img {
+    object-fit: contain;
+    background: transparent;
+}
+
+.produto img {
+    object-fit: contain;
+    background: white;
+}
+
 .card-texto {
     padding: 16px;
 }
@@ -129,11 +139,41 @@ h1 {
     color: #a51f45;
 }
 
-footer {
-    padding: 22px;
-    background: #14204b;
+.rodape {
+    padding: 34px 20px 18px;
+    background: linear-gradient(120deg, #14204b, #741b3c);
     color: white;
     text-align: center;
+}
+
+.rodape-conteudo h2 {
+    margin: 0 0 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.rodape-conteudo p {
+    margin: 0 auto 18px;
+    color: #eee8eb;
+}
+
+.rodape-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.rodape-links a:hover {
+    color: #f0c46d;
+}
+
+.rodape-creditos {
+    margin: 24px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid #ffffff40;
+    color: #eee8eb;
+    font-size: 13px;
 }
 
 @keyframes aparecer {
