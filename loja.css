@@ -26,19 +26,12 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: #14204b;
-    font-weight: bold;
 }
 
 .logo img {
     width: 40px;
     height: 40px;
     object-fit: contain;
-}
-
-.logo span, .produto strong {
-    color: #a51f45;
 }
 
 nav {
@@ -58,7 +51,7 @@ nav a:hover {
     align-items: flex-start;
     justify-content: center;
     position: relative;
-    background: #17234d;
+    background: #74203d;
     color: white;
 }
 
@@ -66,7 +59,7 @@ nav a:hover {
     width: 10px;
     position: absolute;
     inset: 0 0 0 auto;
-    background: #a51f45;
+    background: #17234d;
     content: "";
 }
 
@@ -86,11 +79,7 @@ h1 {
 }
 
 .botao:hover {
-    background: #74203d;
-}
-
-.banner-loja {
-    background: #74203d;
+    background: #17234d;
 }
 
 .conteudo {
@@ -99,7 +88,8 @@ h1 {
     padding: 40px 24px 60px;
 }
 
-.introducao, .card-texto p {
+.introducao,
+.card-texto p {
     color: #666;
     line-height: 1.5;
 }
@@ -132,6 +122,10 @@ h1 {
     padding: 16px;
 }
 
+.produto strong {
+    color: #a51f45;
+}
+
 footer {
     padding: 22px;
     background: #14204b;
@@ -151,11 +145,4 @@ footer {
 
 @media (max-width: 480px) {
     .grade { grid-template-columns: 1fr; }
-}
-
-.rodape {
-    padding: 22px;
-    background: #14204b;
-    color: white;
-    text-align: center;
 }
