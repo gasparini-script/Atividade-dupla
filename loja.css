@@ -71,6 +71,8 @@ h1 {
     margin: 0 0 24px;
     font-size: clamp(32px, 5vw, 52px);
     animation: aparecer 1s ease;
+    animation-delay: 1s;
+    animation-fill-mode: both;
 }
 
 .botao {
