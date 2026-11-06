@@ -1,0 +1,31 @@
+* { box-sizing: border-box; }
+body { margin: 0; color: #20233a; background: #f7f5f1; font-family: Arial, sans-serif; }
+a { color: inherit; text-decoration: none; }
+.topo { height: 70px; padding: 0 8%; display: flex; align-items: center; justify-content: space-between; background: white; }
+.logo { color: #14204b; font-weight: bold; letter-spacing: 2px; }
+.logo span { color: #a51f45; font-size: 12px; }
+nav { display: flex; gap: 24px; }
+nav a:hover { color: #a51f45; }
+.banner { min-height: 300px; padding: 55px 10%; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; position: relative; color: white; background: linear-gradient(90deg, #121a3c, #29396d); }
+.banner::after { width: 10px; position: absolute; inset: 0 0 0 auto; background: #a51f45; content: ""; }
+.banner p { color: #f0c46d; font-size: 13px; letter-spacing: 3px; }
+h1 { margin: 0 0 24px; font-size: clamp(32px, 5vw, 52px); }
+.botao { padding: 12px 20px; border-radius: 3px; background: #a51f45; color: white; }
+.botao:hover { background: #c12d56; }
+.banner-loja { background: linear-gradient(90deg, #681832, #a51f45); }
+.conteudo { max-width: 1100px; margin: auto; padding: 45px 24px 60px; }
+h2 { margin-bottom: 8px; }
+.introducao { margin-bottom: 26px; color: #666; }
+.grade { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.card { overflow: hidden; background: white; box-shadow: 0 3px 12px #17203a12; animation: surgir .5s ease both; transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 9px 20px #17203a25; }
+.card img { width: 100%; height: 180px; display: block; object-fit: cover; }
+.card-texto { padding: 16px; }
+h3 { margin: 0 0 8px; }
+.card-texto p { min-height: 40px; margin: 0 0 12px; color: #666; line-height: 1.5; }
+.produto strong { color: #a51f45; }
+footer { padding: 22px; background: #14204b; color: white; text-align: center; }
+@keyframes surgir { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+@media (max-width: 750px) { .grade { grid-template-columns: repeat(2, 1fr); } .topo { padding: 0 5%; } }
+@media (max-width: 480px) { .grade { grid-template-columns: 1fr; } .card img { height: 210px; } .banner { min-height: 260px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; } }
