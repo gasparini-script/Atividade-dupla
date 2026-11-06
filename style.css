@@ -152,3 +152,10 @@ footer {
 @media (max-width: 480px) {
     .grade { grid-template-columns: 1fr; }
 }
+
+.rodape {
+    padding: 22px;
+    background: #14204b;
+    color: white;
+    text-align: center;
+}
