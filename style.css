@@ -24,8 +24,17 @@ a {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     color: #14204b;
     font-weight: bold;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
 }
 
 .logo span, .produto strong {
